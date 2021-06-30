@@ -1,0 +1,419 @@
+.input1
+{
+  display:inline-flex;
+}
+
+.input1 > input{
+  height: 20px;
+  margin-top: 20px;
+   margin-left: 10px;
+  
+}
+.input1 > h3{
+    
+     margin-left: 10px;
+    
+  }
+
+#opamp{
+  width: 140px;
+
+}
+
+#r1,#v1,#r2,#v2,#r3,#v3,#rf{
+  padding-right:10px ;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.component_value > input{
+  padding-right: 20px;
+}
+#rin1{
+  margin-right: 70px ;
+  margin-left: 30px;
+}
+#rin3{
+  margin-left: 70px;
+
+}
+.img{
+    height: 400px;
+    width: 550px;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 100px;
+    margin-right: 10px;
+    
+}
+html, body {
+    left: 0;
+    margin: 0;
+    background:white;
+    height:100%;
+  }
+  
+  p{
+    font-family:calibri;
+    padding-left:10px;
+  }
+  .container{
+    width:1050px;
+    padding-left: 30px;
+    border: 5px solid black;
+    margin-left: 80px;
+    padding-bottom: 30px;
+  
+  }
+  
+  .canva_container{
+    
+    float:left;
+  }
+  .exp_heading{
+    height: 40px;
+    background-color: rgb(5, 81, 167);
+    width: 1015px;
+  }
+  .exp_heading >h1 {
+    text-align: center;
+    color: #fff;    
+  }
+  .btn21{
+      height: 35px;
+      width: 120px;
+      margin-right: 15px ;
+      border-radius: 10px;
+  }
+  .btn22{
+    height: 35px;
+    width: 120px;
+    margin-right: 15px ;
+    border-radius: 10px;
+}
+.btn23{
+    height: 35px;
+    width: 120px;
+    border-radius: 10px;
+}
+  .user_input{
+    width:300px;
+    height:400px;
+    float: left;
+
+  }
+  .user_input2{ 
+  
+    width:300px;
+    height:400px;
+    overflow:hidden;
+    
+  }
+  .container2
+  {
+      padding-top: 20px;
+      width: 1000px;
+}
+.table{
+margin-left: 30px;
+}
+
+/* TABLE STYLING*/
+table {
+    border: 2px solid #000;
+    border-collapse: collapse;
+    padding-bottom: 100px;
+    padding-top:30px ;
+    width: 100%;
+    margin-left: 10px;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1px;
+    height: 30px;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+ 
+
+/*************************************************/
+.button1,.btn1{
+  
+  width: 120px;
+  height:35px;
+  margin-top: 40px;
+  border-radius: 30px;
+  align-items: center;
+  padding-bottom: 3rem;
+  padding-top: 0.5em;
+  cursor: pointer;
+  transition: .1s transform, .3s box-shadow;
+  will-change: transform, box-shadow;
+  margin-right:5px;
+  
+}
+
+.button1 >h2{
+  font-size: 15px;
+}
+.btn1 >h2{
+  font-size: 15px;
+}
+/*********************************************/
+.heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  display: grid;
+  grid: auto / auto auto;
+}
+
+.heading > span {
+  margin-left: 0.25em;
+  font-weight: 700;
+}
+
+.heading span {
+  overflow: hidden;
+  display: inline-flex;
+  transition: .6s;
+}
+.heading > span,
+.heading > span.on span {
+  transform: translateY(100%);
+  grid-area: 1 / 2;
+}
+.heading > span span,
+.heading > span.on {
+  transform: translateY(-100%);
+}
+
+.heading.active span.off,
+.heading.active span.off span,
+.heading:not(.active) span.on,
+.heading:not(.active) span.on span {
+  transform: none;
+}
+
+.btn2 {
+  --w: 4em;
+  --bg: rgb(var(--rgb));
+  --bga: rgba(var(--rgb), .4); /* Safari fix */
+  -webkit-appearance: none;
+  border: none;
+  font-size: 100%;
+  width: var(--w);
+  height: var(--w);
+  background: var(--bg);
+  box-shadow: 0 3px 12px 2px var(--bga);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .1s transform, .3s box-shadow;
+  will-change: transform, box-shadow;
+  backface-visibility: hidden;
+}
+
+.btn2 > * {
+  pointer-events: none;
+}
+.btn2:focus {
+  outline: none;
+}
+.btn2:active {
+  transform: scale(.97);
+}
+.btn2:after {
+  --bg: rgb(var(--rgb));
+  content: '';
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  width: 200%;
+  height: 200%;
+  background: var(--bg);
+  border-radius: inherit;
+  transform: translate(5%, 5%) scale(.03);
+  pointer-events: none;
+}
+.btn2.animating:after {
+  animation: c .5s cubic-bezier(.5, 0, .5, 1) backwards;
+}
+.btn2.active,.btn2:not(.active):after {
+  --rgb: 64, 227, 120;
+}
+.btn2:not(.active),.btn2.active:after {
+  --rgb: 229, 55, 94;
+}
+
+@keyframes c {
+  to {
+    transform: none;
+  }
+}
+
+.btn2 span {
+  display: inline-block;
+  position: relative;
+  margin-top: 5px;
+}.btn2 b {
+  --w: 7px;
+  overflow: hidden;
+  border-radius: var(--w);
+  display: grid;
+  width: var(--w);
+  height: 35px;
+  top: 0;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 3;
+  will-change: transform;
+}.btn2 b:before {
+  content: '';
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--w);
+  transform: translateY(-15px);
+  transition-timing-function: var(--timing);
+  transition: .5s;
+}
+.btn2.active b:before {
+  transform: translateY(12px);
+  transition-delay: .27s;
+  transition-timing-function: cubic-bezier(.25, .25, .25, 1.25);
+}
+.btn2 svg {
+  --dash: 190;
+  stroke-linecap: round;
+  stroke-dasharray: var(--dash);
+  stroke-dashoffset: var(--dash);
+  width: 46px;
+  height: 46px;
+  transform: scaleX(-1) rotate(-89deg);
+  transition: .4s;
+  transition-timing-function: var(--timing);
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  will-change: transform, stroke-dashoffset;
+}.btn2:not(.active) svg {
+  stroke-dashoffset: 40;
+  transform: scaleX(-1) rotate(-52deg);
+  transition: .5s .25s;
+}
+
+/**************/
+
+.button1 > * {
+  pointer-events:none;
+}
+.button1:focus {
+  outline: none;
+  background-color: rgb(20, 107, 220);
+  color: #fff;
+}
+.button1:active {
+  transform: scale(.97);
+  background-color: rgb(20, 107, 220);
+  color: #fff;
+}
+
+
+/********************/
+#dis_connect,#disconnect,#clear{
+  width: 140px;
+  
+}
+
+/**************/
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #222222
+}
+
+/*Menu Bar*/
+.menu
+{
+  width: 1200;
+}
+
+.sum_button,.diff_button > button{
+  margin-left: 400px;
+  margin-right: 40px;
+}
+
+.sum_button, .diff_button {
+  border: 2px solid #000000;
+  width: 200px;
+  height:80px;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.exp2{
+  display: none;
+}
+
+.hidexx {
+  display: none;
+}
+    
+.myDIV:hover + .hidexx {
+  display: block;
+  color: rgb(0, 0, 0);
+}
+.summer_btn{
+margin-left: 100px;
+
+}
+.subtractor_btn{
+  margin-left: 20px;
+  
+  }
+  
+.summer_btn,.subtractor_btn {
+height: 50px;
+
+padding: 8px;
+border-radius: 14px;
+border: 2px solid black;
+
+background-color: rgb(20, 107, 220);
+color: #fff;
+
+}
+.summer_btn:active{
+  color: #fff;
+  background-color: #000;
+}
+.subtractor_btn:active{
+  color: #fff;
+  background-color: #000;
+
+} 

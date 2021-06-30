@@ -1,0 +1,57 @@
+{ 
+ "developer1" : {
+
+    "Name of Developer": "K.Srividhya",
+    "Email id"         : "srivi@svce.ac.in",
+    "Mobile Number"    : "+91 7550010500",
+    "Designation"      : "Assistant Professor",
+    "Department"       : "Electronics and Communication Engineering",
+    "Institute"        : "Sri Venkateswara College of Engineering",
+    "College Address"  : "Post Bag No.1, Pennalur Village , Chennai - Bengaluru High Road , Sriperumbudur Tk, Tamil Nadu 602117",
+    "College Website"  : "https://www.svce.ac.in/"
+
+   },
+
+ "developer2" : {
+
+    "Name of Developer": "Kishore M",
+    "Email id"         : "2019ec0051@svce.ac.in",
+    "Mobile Number"    : "6379659221",
+    "Designation"      : "Student",
+    "Department"       : "Electronics and Communication Engineering",
+    "Institute"        : "Sri Venkateswara College of Engineering",
+    "College Address"  : "Post Bag No.1, Pennalur Village , Chennai - Bengaluru High Road , Sriperumbudur Tk, Tamil Nadu 602117",
+    "College Website"  : "https://www.svce.ac.in/"
+
+   },
+
+ "developer3" : {
+
+    "Name of Developer": "Amalan Valliappan M P",
+    "Email id"         : "amalanvalliappan@gmail.com",
+    "Mobile Number"    : "7010514005",
+    "Designation"      : "Student",
+    "Department"       : "Electronics and Communication Engineering",
+    "Institute"        : "Sri Venkateswara College of Engineering",
+    "College Address"  : "Post Bag No.1, Pennalur Village , Chennai - Bengaluru High Road , Sriperumbudur Tk, Tamil Nadu 602117",
+    "College Website"  : "https://www.svce.ac.in/"
+
+ },
+
+ "developer4" : {
+
+    "Name of Developer": "Aarshik B",
+    "Email id"         : "aarshik26@gmail.com",
+    "Mobile Number"    : "7299023713",
+    "Designation"      : "Student",
+    "Department"       : "Electronics and Communication Engineering",
+    "Institute"        : "Sri Venkateswara College of Engineering",
+    "College Address"  : "Post Bag No.1, Pennalur Village , Chennai - Bengaluru High Road , Sriperumbudur Tk, Tamil Nadu 602117",
+    "College Website"  : "https://www.svce.ac.in/"
+
+ }
+
+}
+
+ 
+  

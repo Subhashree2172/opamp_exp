@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Subtractor</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="exp1">
+    <a href="./index.html" class="summer_btn">SUMMER</a>
+    <a href="#" class="subtractor_btn">SUBTRACTOR</a>
+    <div class="container">
+      <div class="exp_heading">
+        <h1>SUBTRACTOR</h1>
+      </div>
+      <p>(The lab is developed as a nodal centre of NITK Vlab)</p>
+      <div class="components">
+        <h2>COMPONENTS:</h2>
+
+        <div class="component_image">
+             <img width="160" height="100" src="./images/resistor.png" alt="">
+
+          <img id="opamp" width="200" height="120" src="./images/opamp.png" alt="">
+
+
+          </div>
+        <!--
+
+      <input type="number" min="1" max="5" value="1"id="rin1">
+      <input type="number" min="1" max="5" value="1" id="rin2">
+      <input type="number" min="1" max="5" value="1" id="rin3">
+      <button onclick="input_comp()" >SELECT</button>
+    </div>-->
+        <div class="myDIV">
+          <h2>PROCEDURE</h2>
+        </div>
+
+        <li><b>STEP-1:</b>Choose the Number of Components.</li>
+        <li><b>STEP-2:</b>Click the Connect/Disconnect Button to Connect/Disconnect the components.</li>
+        <li><b>STEP-3:</b>Switch on the power supply by clicking the power button.</li>
+        <li><b>STEP-4:</b>Click on the Result Button to view the result in the table below</li>
+        </ul>
+        <h2>SIMULATION:</h2>
+        <div class="canva_container">
+
+            <canvas width="850" height="450" id="canvas"></canvas>
+            <img src="" alt="">
+          </div>
+          <div class="user_input">
+            <div class="input1">
+              <h3><b>R1(Ω)</b></h3>
+              <input type="number" value="1" min="1" max="10"  id="r1" onchange="results">
+              <h3><b>R2(Ω)</b></h3>
+              <input type="number" value="1" min="1" max="10"  id="r2" onchange="results">
+            </div>
+            <div class="input1">
+              <h3><b>Rf(Ω)</b></h3>
+            <input type="number" value="1" min="1" max="10"  id="rf" onchange="results">
+            <h3><b>Rg(Ω)</b></h3>
+            <input type="number" value="1" min="1" max="10"  id="rg" onchange="results">
+            </div>
+            <div class="input1">
+
+              <h3><b>V1(V)</b></h3>
+              <input type="number" value="1" min="1" max="10"  id="v1" onclick="ques3();"onchange="results">
+
+              <h3><b>V2(V)</b></h3>
+              <input type="number" value="1" min="1" max="10"  id="v2"onclick="ques4();" onchange="results">
+            </div>
+
+          </div>
+        <!-- Pop up question 1 -->
+     <dialog id="pop_up_quest_1" class="demo question">
+      <p>1.Which of the following is a military grade op-amp?</p>
+      <form class="" >
+          <input class="answer" type="radio"  name="quest_1" value="0" > <label>741 </label><br>
+          <input class="answer" type="radio"  name="quest_1" value="0"> <label> 741C</label><br>
+          <input class="answer" type="radio"   name="quest_1" value="1" > <label>741S </label><br>
+          <input class="answer" type="radio"  name="quest_1" value="0" > <label>741SC </label>
+      </form>
+    </dialog>
+    <!-- Pop up question 2 -->
+    <dialog id="pop_up_quest_2" class="demo question">
+      <p>2.The op-amps 741C and 741E are identical to op-amps</p>
+      <form class="" >
+          <input class="answer" type="radio"  name="quest_1" value="0" > <label> 741S and 741A</label><br>
+          <input class="answer" type="radio"  name="quest_1" value="1"> <label>	741 and 741A</label><br>
+          <input class="answer" type="radio"   name="quest_1" value="0" > <label>741A and 741SC</label><br>
+          <input class="answer" type="radio"  name="quest_1" value="0" > <label>741 and 741S</label>
+      </form>
+    </dialog>
+    <!-- Pop up question 3 -->
+    <dialog id="pop_up_quest_3" class="demo question">
+      <p>3.General purpose op-amp cannot be used for the application </p>
+      <form class="" >
+          <input class="answer" type="radio"  name="quest_1" value="0" > <label>Integrator </label><br>
+          <input class="answer" type="radio"  name="quest_1" value="0"> <label> Differentiator </label><br>
+          <input class="answer" type="radio"   name="quest_1" value="0" > <label> Summer </label><br>
+          <input class="answer" type="radio"  name="quest_1" value="1" > <label> Audio Power Amplifier </label>
+      </form>
+    </dialog>
+    <!-- Pop up question 4 -->
+    <dialog id="pop_up_quest_4" class="demo question">
+      <p>4.Find the input voltage of an ideal op-amp. It’s one of the inputs and output voltages are 2v and 12v. (Gain=3)</p>
+      <form class="" >
+          <input class="answer" type="radio"  name="quest_1" value="0" > <label> 8V</label><br>
+          <input class="answer" type="radio"  name="quest_1" value="0"> <label> 4V</label><br>
+          <input class="answer" type="radio"   name="quest_1" value="0" > <label>-4V</label><br>
+          <input class="answer" type="radio"  name="quest_1" value="1" > <label> -2V </label>
+      </form>
+    </dialog>
+    <!-- Pop up question 5 -->
+    <dialog id="pop_up_quest_5" class="demo question">
+      <p>5.Find the output voltage of an ideal op-amp. If V1 and V2 are the two input voltages</p>
+      <form class="" >
+          <input class="answer" type="radio"  name="quest_1" value="0" > <label>VO= V1-V2</label><br>
+          <input class="answer" type="radio"  name="quest_1" value="1"> <label>VO= A×(V1-V2)</label><br>
+          <input class="answer" type="radio"   name="quest_1" value="0" > <label>VO= A×(V1+V2) </label><br>
+          <input class="answer" type="radio"  name="quest_1" value="0" > <label>VO= V1×V2 </label>
+      </form>
+    </dialog>
+
+        <div class="user_input2">
+            <button id="con_button" class="button1" onclick="connections();enableConnect();ques1();">
+              <h2>CONNECT</h2>
+            </button>
+
+
+            <div class="supply">
+            <main class="pwr_ind">
+              <h3 class="heading">Power Supply
+                <!--<span class="on">
+                  <span>
+                    off
+                  </span>
+                </span>
+                <span class="off">
+                  <span>
+                    on
+                  </span>
+                </span>
+                </h1>-->
+                <button type="button" disabled id="pwr_button" onclick="resultEnable();pwrCheck();" class="btn2">
+                  <span >
+                    <b></b>
+                    <svg viewBox="-5.5 -5.5 71 71" id="circle">
+                      <circle cx="30" cy="30" r="30" stroke="white" stroke-width="11" fill="transparent"></circle>
+                    </svg>
+                  </span>
+                </button>
+            </main>
+            <button disabled class="btn1" id="dis_connect" onclick="results();ques2();">
+              <h2>RESULT</h2>
+            </button>
+            <button class="button1" id="dis_connect" onclick="clear_result();ques5();x">
+              <h2> CLEAR RESULT</h2>
+            </button>
+            <button disabled class="btn1" id="disconnect" onclick="remove_connections();dis_pwr_off();">
+              <h2>DISCONNECT</h2>
+            </button>
+
+          </div>
+          </div>
+
+
+
+        <div class="container2">
+          <h2>RESULTS</h2>
+          <table id="myTable" style="width:100%">
+            <tr>
+
+
+            <th>V1</th>
+            <th>V2</th>
+
+            <th>Vo=(V1-V2)</th>
+            </tr>
+             <tr>
+
+              <td id="vin1"></td>
+              <td id="vin2"></td>
+              <td id="v0"></td>
+            </tr>
+
+
+
+          </table>
+        </div>
+      </div>
+      <p>We acknowledge NITK and PALS for extending their support towards successful completion of this experiment</p>
+
+
+      <script src="./js/main2.js" charset="utf-8"> </script>
+</body>
+
+</html>
