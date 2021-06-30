@@ -18,7 +18,7 @@
 
 <p align="center">Citation : From Opamp - Operational Amplifier By electroSome</p>
 
-# Summing Amplifier
+## Summing Amplifier
 
  - The Summing Amplifier is a type of Op - Amp circuit configuration .
  - It is used to add all the voltages present on two or more inputs to get a single summing output voltage.
@@ -63,7 +63,7 @@
 
 
 
-# Differential Amplifier
+## Differential Amplifier
 
 <p align="center">
 <img width="400" height="300" alt= "Subtractor" src="https://firebasestorage.googleapis.com/v0/b/vlab-29a0a.appspot.com/o/vlab1%2Fsubtractor_ampifier.png?alt=media&token=d9d3f95d-c2d4-4eb1-b509-3cd7ea30a836">
