@@ -7,12 +7,12 @@
   height: 20px;
   margin-top: 20px;
    margin-left: 10px;
-  
+
 }
 .input1 > h3{
-    
+
      margin-left: 10px;
-    
+
   }
 
 #opamp{
@@ -43,7 +43,7 @@
     padding-top: 20px;
     margin-left: 100px;
     margin-right: 10px;
-    
+
 }
 html, body {
     left: 0;
@@ -51,32 +51,32 @@ html, body {
     background:white;
     height:100%;
   }
-  
+
   p{
     font-family:calibri;
     padding-left:10px;
   }
   .container{
-    width:1050px;
+    width:950px;
     padding-left: 30px;
     border: 5px solid black;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     padding-bottom: 30px;
-  
+
   }
-  
+
   .canva_container{
-    
+
     float:left;
   }
   .exp_heading{
     height: 40px;
     background-color: rgb(5, 81, 167);
-    width: 1015px;
+    width: 920px;
   }
   .exp_heading >h1 {
     text-align: center;
-    color: #fff;    
+    color: #fff;
   }
   .btn21{
       height: 35px;
@@ -101,17 +101,17 @@ html, body {
     float: left;
 
   }
-  .user_input2{ 
-  
+  .user_input2{
+
     width:300px;
     height:400px;
     overflow:hidden;
-    
+
   }
   .container2
   {
       padding-top: 20px;
-      width: 1000px;
+      width:900px;
 }
 .table{
 margin-left: 30px;
@@ -127,36 +127,36 @@ table {
     margin-left: 10px;
     table-layout: fixed;
   }
-  
+
   table caption {
     font-size: 1.5em;
     margin: .5em 0 .75em;
   }
-  
+
   table tr {
     background-color: #ffffff;
     border: 1px solid #ddd;
     padding: 1px;
     height: 30px;
   }
-  
+
   table th,
   table td {
     padding: .625em;
     text-align: center;
   }
-  
+
   table th {
     font-size: .85em;
     letter-spacing: .1em;
     text-transform: uppercase;
   }
-  
- 
+
+
 
 /*************************************************/
 .button1,.btn1{
-  
+
   width: 120px;
   height:35px;
   margin-top: 40px;
@@ -168,7 +168,7 @@ table {
   transition: .1s transform, .3s box-shadow;
   will-change: transform, box-shadow;
   margin-right:5px;
-  
+
 }
 
 .button1 >h2{
@@ -342,7 +342,7 @@ table {
 /********************/
 #dis_connect,#disconnect,#clear{
   width: 140px;
-  
+
 }
 
 /**************/
@@ -383,7 +383,7 @@ a:hover {
 .hidexx {
   display: none;
 }
-    
+
 .myDIV:hover + .hidexx {
   display: block;
   color: rgb(0, 0, 0);
@@ -394,9 +394,9 @@ margin-left: 100px;
 }
 .subtractor_btn{
   margin-left: 20px;
-  
+
   }
-  
+
 .summer_btn,.subtractor_btn {
 height: 50px;
 
@@ -416,4 +416,4 @@ color: #fff;
   color: #fff;
   background-color: #000;
 
-} 
+}
