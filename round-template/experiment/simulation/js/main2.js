@@ -235,14 +235,38 @@ function clickHandler() {
 btn.addEventListener('click', clickHandler);
 //-------------------------Questions----------------------------//
 var q1=0;
+// Function disabler
+function disable() {
+  var x1 = " "
+  alert(quest_answered)
+  if(quest_answered === 0 ){
+    x1 = "true";
+  }
+  else{
+    x1 =false;
+  }
+  alert(x1)
+  document.getElementById("con_button").disabled = x1;
+  document.getElementById("pwr_button").disabled = x1;
+  document.getElementById("dis_connect").disabled = x1;
+  document.getElementById("clear").disabled = x1;
+  document.getElementById("disconnect").disabled = x1;
+  document.getElementById("r1").disabled = x1;
+  document.getElementById("r2").disabled = x1;
+  document.getElementById("rf").disabled = x1;
+  document.getElementById("rg").disabled = x1;
+  document.getElementById("v1").disabled = x1;
+  document.getElementById("v2").disabled = x1;
+}
 //Question 1
 function ques1()
 {   quest_no = 1;
     while(q1<quest_no)
     {dialog1 = document.getElementById('pop_up_quest_1')
-    dialog1.show();
-
+    dialog1.show()
     q1 = q1+quest_no;
+    quest_answered = 0;
+    disable();
 }
 }
 //Question 2
@@ -253,6 +277,8 @@ function ques2()
   {dialog1 = document.getElementById('pop_up_quest_2')
     dialog1.show();
     q1 = q1+quest_no;
+      quest_answered = 0;
+    disable();
   }
 }
 //Question 3
@@ -263,6 +289,8 @@ function ques3()
   {dialog1 = document.getElementById('pop_up_quest_3')
     dialog1.show();
     q1 = q1+quest_no;
+      quest_answered = 0;
+    disable();
   }
 }
 //Question 4
@@ -273,6 +301,8 @@ function ques4()
   {dialog1 = document.getElementById('pop_up_quest_4')
     dialog1.show();
     q1 = q1+quest_no;
+      quest_answered = 0;
+    disable();
   }
 }
 //Question 5
@@ -283,6 +313,8 @@ function ques5()
   {dialog1 = document.getElementById('pop_up_quest_5')
     dialog1.show();
     q1 = q1+quest_no;
+  quest_answered = 0;
+    disable();
   }
 }
 //
@@ -323,6 +355,7 @@ function ans_display(ans,quest_no){
   }
   dialog1.close();
   quest_answered = 1;
+  disable();
 }
 //----------------------DISCONNECT CONNECTION-----------------//
 
