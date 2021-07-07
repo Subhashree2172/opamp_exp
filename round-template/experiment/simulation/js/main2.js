@@ -238,14 +238,12 @@ var q1=0;
 // Function disabler
 function disable() {
   var x1 = " "
-  alert(quest_answered)
   if(quest_answered === 0 ){
     x1 = "true";
   }
   else{
     x1 =false;
   }
-  alert(x1)
   document.getElementById("con_button").disabled = x1;
   document.getElementById("pwr_button").disabled = x1;
   document.getElementById("dis_connect").disabled = x1;
