@@ -1,7 +1,7 @@
 ## Operational Amplifier IC 741
 
 <p align="center">
-<img width="400" height="300" alt= "Op-Amp" src="https://firebasestorage.googleapis.com/v0/b/vlab-29a0a.appspot.com/o/vlab1%2Fop-amp.png?alt=media&token=a8917aad-7706-4995-883f-a7770375e3a4">
+<img width="400" height="300" alt= "Op-Amp" title="Operational Amplifier IC 741" src="https://firebasestorage.googleapis.com/v0/b/vlab-29a0a.appspot.com/o/vlab1%2Fop-amp.png?alt=media&token=a8917aad-7706-4995-883f-a7770375e3a4">
 </p>
 
  - IC 741  is a monolithic IC, comprising of a general purpose Operational Amplifier.
@@ -13,7 +13,7 @@
  - Here , we are going to see the use of Op - Amp as a summer and a subtractor.
 
 <p align="center">
-<img width="400" height="300" alt= "Op-Amp-Graph" src="https://firebasestorage.googleapis.com/v0/b/vlab-29a0a.appspot.com/o/vlab1%2Fgraph.png?alt=media&token=c2a90117-47f4-4321-8b84-9d9f60685f95">
+<img width="400" height="300" alt= "Op-Amp-Graph" title="Op-Amp-Graph" src="https://firebasestorage.googleapis.com/v0/b/vlab-29a0a.appspot.com/o/vlab1%2Fgraph.png?alt=media&token=c2a90117-47f4-4321-8b84-9d9f60685f95">
 </p>
 
 <p align="center">Citation : From Opamp - Operational Amplifier By electroSome</p>
@@ -29,7 +29,7 @@
 
 
 <p align="center">
-<img width="400" height="300" alt= "Summer" src="https://firebasestorage.googleapis.com/v0/b/vlab-29a0a.appspot.com/o/vlab1%2Fsumming_amplifier.png?alt=media&token=9b939f71-11be-4789-a3f0-ba96b5589c1e">
+<img width="400" height="300" alt= "Summer" title="Summing Amplifier" src="https://firebasestorage.googleapis.com/v0/b/vlab-29a0a.appspot.com/o/vlab1%2Fsumming_amplifier.png?alt=media&token=9b939f71-11be-4789-a3f0-ba96b5589c1e">
 </p>
 
 <p align="center">Citation : From Inverting and Non Inverting Summing Amplifier - Voltage Adder By Electronics Hub</p>
@@ -46,18 +46,18 @@
  -        => Vout = -(V1 + V2 + V3 + … )
 
 
-## Applications Of Summing Amplifier
+### Applications Of Summing Amplifier
 
  - Allows audio experts to combine signals from various channels.
  - Every audio input can be configured independently without affecting the output.
  - Used in digital to analog converter.
 
-## Advantages Of Summing Amplifier
+### Advantages Of Summing Amplifier
 
  - The summing point is virtually at earth potential .Hence , the signals from each different channel do not affect each other.
  - Each channel can be summed or mixed regardless of the signal level and source impedance .
 
-## Disadvantages Of Summing Amplifier
+### Disadvantages Of Summing Amplifier
 
  - If you disconnect one of the inputs,it doubles the gain of the circuit  for the remaining channel which is connected . But in inverting summing amplifier ,  it generates a virtual earth summing point
 
@@ -66,7 +66,7 @@
 ## Differential Amplifier
 
 <p align="center">
-<img width="400" height="300" alt= "Subtractor" src="https://firebasestorage.googleapis.com/v0/b/vlab-29a0a.appspot.com/o/vlab1%2Fsubtractor_ampifier.png?alt=media&token=d9d3f95d-c2d4-4eb1-b509-3cd7ea30a836">
+<img width="400" height="300" alt= "Subtractor" title="Differential Amplifier" src="https://firebasestorage.googleapis.com/v0/b/vlab-29a0a.appspot.com/o/vlab1%2Fsubtractor_ampifier.png?alt=media&token=d9d3f95d-c2d4-4eb1-b509-3cd7ea30a836">
 </p>
 
 <p align="center">Citation : From Differential Amplifier By Wikipedia</p>
@@ -91,20 +91,20 @@
   - Vout = R3/R1 * ( V2 - V1)
   - If R3 = R1 , then Vout = V2 - V1
 
-## Applications Of Differential Amplifier
+### Applications Of Differential Amplifier
 
   - Used in series negative feedback circuit.
   - Used as a volume control circuit.
   - Used as an automatic gain control circuit.
 
 
-## Advantages Of Differential Amplifier
+### Advantages Of Differential Amplifier
 
    - Manipulates differential signals.
    - Provide immunity to external noise, a 6-dB increase in dynamic range, which gives a clear advantage for low-voltage systems .
    - They reduce second-order harmonics.
 
-## Disadvantages Of Differential Amplifier
+### Disadvantages Of Differential Amplifier
 
   - Complexity is the main drawback of Differential Amplifier.
   - To make a balanced differential amplifier,we need atleast two differential amplifiers ,  using a configuration known as a long-tailed pair.
