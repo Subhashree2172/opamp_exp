@@ -237,8 +237,6 @@ function enableConnect()
 {
     //document.getElementById("disconnect").disabled = false;
     document.getElementById("pwr_button").disabled = false;
-
-
 }
 //---------------------ENABLING RESULT BUTTON--------------//
 
@@ -297,27 +295,17 @@ function disableBtn()
 function dis_pwr_off()
 {
     var lable = $(".btn2").text().trim();
-
     if(lable == "On") {
-
         $(".btn2").text("Off");
         console.log("durinf disc");
-
         alert("Power Supply => Off , Circuit Disconnected");
         turnOff();
         clickHandler();
         disableBtn();
-
     }
-
-
 }
 // function disableConnections()
 // {
-
-
-
-
 //       $(".btn2").trigger('click');
 
 //     //  // $("#disconnect").show();
@@ -357,8 +345,9 @@ function ques1()
     while(q1<quest_no)
     {dialog1 = document.getElementById('pop_up_quest_1')
     dialog1.show();
-
+    quest_answered = 0;
     q1 = q1+quest_no;
+    disable();
 }
 }
 //Question 2
@@ -369,6 +358,8 @@ function ques2()
   {dialog1 = document.getElementById('pop_up_quest_2')
     dialog1.show();
     q1 = q1+quest_no;
+    quest_answered = 0;
+    disable();
   }
 }
 //Question 3
@@ -379,6 +370,8 @@ function ques3()
   {dialog1 = document.getElementById('pop_up_quest_3')
     dialog1.show();
     q1 = q1+quest_no;
+    quest_answered =0;
+    disable();
   }
 }
 //Question 4
@@ -389,6 +382,8 @@ function ques4()
   {dialog1 = document.getElementById('pop_up_quest_4')
     dialog1.show();
     q1 = q1+quest_no;
+    quest_answered = 0;
+    disable();
   }
 }
 //Question 5
@@ -399,9 +394,32 @@ function ques5()
   {dialog1 = document.getElementById('pop_up_quest_5')
     dialog1.show();
     q1 = q1+quest_no;
+    quest_answered=0;
+    disable();
   }
 }
-//
+//Disable function
+function disable() {
+  var x = " "
+  if(quest_answered ===0 ){
+    x = "true";
+  }
+  else{
+    x=false
+  }
+  document.getElementById("con_button").disabled = x;
+  document.getElementById("pwr_button").disabled = x;
+  document.getElementById("dis_connect").disabled = x;
+  document.getElementById("clear").disabled = x;
+  document.getElementById("disconnect").disabled = x;
+  document.getElementById("r1").disabled = x;
+  document.getElementById("v1").disabled = x;
+  document.getElementById("r2").disabled = x;
+  document.getElementById("v2").disabled = x;
+  document.getElementById("r3").disabled = x;
+  document.getElementById("v3").disabled = x;
+  document.getElementById("rf").disabled = x;
+}
 // POPup question function
 for(i=0;i<document.querySelectorAll(".answer").length;i++){
   document.querySelectorAll(".answer")[i].addEventListener("click", function(){
@@ -438,5 +456,6 @@ function ans_display(ans,quest_no){
   }
   dialog1.close();
   quest_answered = 1;
+  disable();
 }
 //----display button on power supply on-----//
